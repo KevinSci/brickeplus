@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export REPOPATH=/home/syscunid/brickeplus.syscunid.com.mx
+    - export DEPLOYPATH=/home/syscunid/brickeplus.syscunid.com.mx
+    - /bin/rsync -av --delete $REPOPATH/public/ $DEPLOYPATH/
