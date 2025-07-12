@@ -1,7 +1,7 @@
 {
-  "resources/css/main.css": {
-    "file": "assets/main-CLV5FQC9.css",
-    "src": "resources/css/main.css",
+  "resources/css/app.css": {
+    "file": "assets/app-BqwQBi5P.css",
+    "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/img/bg-little-mermaid.jpg": {
