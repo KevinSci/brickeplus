@@ -1,8 +1,12 @@
 {
-  "resources/css/app.css": {
-    "file": "assets/app-BkS_vM8V.css",
-    "src": "resources/css/app.css",
+  "resources/css/main.css": {
+    "file": "assets/main-CLV5FQC9.css",
+    "src": "resources/css/main.css",
     "isEntry": true
+  },
+  "resources/img/bg-little-mermaid.jpg": {
+    "file": "assets/bg-little-mermaid-pa00aTY2.jpg",
+    "src": "resources/img/bg-little-mermaid.jpg"
   },
   "resources/js/app.js": {
     "file": "assets/app-DNxiirP_.js",
