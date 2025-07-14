@@ -24,7 +24,7 @@
   </header>
   <div class="banner">
     <div class="content active">
-        <img src="{{ asset('img/bg-little-mermaid.jpg') }}" 
+        <img src="{{ asset('img/the-little-mermaid-title.png') }}" 
         alt="" 
         class="movie-title">
         <h4>
