@@ -1,12 +1,26 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-BqwQBi5P.css",
+    "file": "assets/app-CLV5FQC9.css",
     "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/login.css": {
+    "file": "assets/login-D0y1XqFW.css",
+    "src": "resources/css/login.css",
+    "isEntry": true
+  },
+  "resources/css/register.css": {
+    "file": "assets/register-Qz9zeZi0.css",
+    "src": "resources/css/register.css",
     "isEntry": true
   },
   "resources/img/bg-little-mermaid.jpg": {
     "file": "assets/bg-little-mermaid-pa00aTY2.jpg",
     "src": "resources/img/bg-little-mermaid.jpg"
+  },
+  "resources/img/fondo1.jpg": {
+    "file": "assets/fondo1-D0ByiW9m.jpg",
+    "src": "resources/img/fondo1.jpg"
   },
   "resources/js/app.js": {
     "file": "assets/app-DNxiirP_.js",
