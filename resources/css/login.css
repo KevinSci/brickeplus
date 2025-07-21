@@ -1,0 +1,155 @@
+img.favicon {
+    width: 32px;
+    height: 32px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../img/fondo1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Cambiado a cover para mejor adaptación */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor principal - Tema oscuro */
+.container {
+    width: 90%;
+    max-width: 400px;
+    min-height: 400px;
+    background: rgba(0, 0, 0, 0.6); /* Fondo negro semi-transparente */
+    border-radius: 30px;
+    padding: 1.5rem;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra más oscura */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+}
+
+.container h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Campos de entrada - Conserva animación */
+.inputbox {
+    position: relative;
+    margin: 20px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Borde más suave */
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7); /* Texto gris claro */
+    font-size: 1rem;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.4); /* Fondo oscuro */
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 10px;
+    color: #fff;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+
+/* Animación al enfocar/validar (se mantiene igual) */
+.inputbox input:focus ~ label,
+.inputbox input:valid ~ label {
+    top: -5px;
+    font-size: 0.85rem;
+    color: #3A0519; /* Color original para contraste */
+}
+
+/* Secciones adicionales */
+.forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.8); /* Texto más claro */
+}
+
+.forget label {
+    display: flex;
+    align-items: center;
+}
+
+.forget input {
+    margin-right: 5px;
+}
+
+.forget a {
+    color: #efe9ec; /* Color original */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forget a:hover {
+    text-decoration: underline;
+}
+
+/* Botón - Estilo oscuro con hover */
+button {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #3A0519; /* Color original */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.4s;
+    margin-top: 10px;
+    color: white;
+}
+
+button:hover {
+    background-color: #5a0d2b; /* Tonos más oscuros para hover */
+    transform: translateY(-2px);
+}
+
+.register {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+}
+
+.register a {
+    text-decoration: none;
+    color: #efe9ec; /* Color original */
+    font-weight: 600;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: #ff4d4d; /* Rojo más vibrante */
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../img/fondo1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    min-height: 550px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 2.5rem;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.inputbox {
+    position: relative;
+    margin: 20px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 10px;
+    color: #fff;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+
+/* Cambio a blanco para la animación */
+.inputbox input:focus ~ label,
+.inputbox input:valid ~ label {
+    top: -5px;
+    font-size: 0.85rem;
+    color: #ffffff; /* Blanco en lugar de azul */
+}
+
+/* Botón con color #3A0519 */
+button {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #3A0519; /* Color vino oscuro */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.4s;
+    margin-top: 10px;
+    color: white; /* Texto blanco para contraste */
+}
+
+button:hover {
+    background-color: #5a0d2b; /* Tonos más oscuros para hover */
+    transform: translateY(-2px);
+}
+
+.login {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+}
+
+.login a {
+    text-decoration: none;
+    color: #ffffff; /* Blanco para el enlace */
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.login a:hover {
+    color: #cccccc; /* Gris claro al hover */
+    text-decoration: underline;
+}
