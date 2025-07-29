@@ -4,6 +4,11 @@
     "src": "resources/css/app.css",
     "isEntry": true
   },
+  "resources/css/collection.css": {
+    "file": "assets/collection-nuWdrcl7.css",
+    "src": "resources/css/collection.css",
+    "isEntry": true
+  },
   "resources/css/login.css": {
     "file": "assets/login-D0y1XqFW.css",
     "src": "resources/css/login.css",
@@ -14,6 +19,11 @@
     "src": "resources/css/register.css",
     "isEntry": true
   },
+  "resources/css/welcome.css": {
+    "file": "assets/welcome-CykeevEf.css",
+    "src": "resources/css/welcome.css",
+    "isEntry": true
+  },
   "resources/img/bg-little-mermaid.jpg": {
     "file": "assets/bg-little-mermaid-pa00aTY2.jpg",
     "src": "resources/img/bg-little-mermaid.jpg"
@@ -22,10 +32,20 @@
     "file": "assets/fondo1-D0ByiW9m.jpg",
     "src": "resources/img/fondo1.jpg"
   },
+  "resources/img/pantalla1.png": {
+    "file": "assets/pantalla1-6cIBm45j.png",
+    "src": "resources/img/pantalla1.png"
+  },
   "resources/js/app.js": {
     "file": "assets/app-DNxiirP_.js",
     "name": "app",
     "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/welcome.js": {
+    "file": "assets/welcome-wzysXspY.js",
+    "name": "welcome",
+    "src": "resources/js/welcome.js",
     "isEntry": true
   }
 }

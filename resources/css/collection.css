@@ -1,0 +1,325 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #3A0519;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, #A53860, #EF88AD);
+    margin: 10px 0 25px;
+    opacity: 0.7;
+}
+
+/* Header */
+.header {
+    background-color: #670D2F;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid #A53860;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 40px;
+    cursor: pointer;
+    display: none;
+    filter: brightness(0) invert(1);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.navbar ul li a:hover {
+    color: #EF88AD;
+}
+
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #EF88AD;
+    transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+/* Secci��n de pel��culas */
+.movies.container {
+    margin-bottom: 40px; 
+    padding-bottom: 20px;
+}
+
+.movies h2 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.box-container-1, .box-container-2, .box-container-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.box-1, .box-2, .box-3 {
+    background: rgba(103, 13, 47, 0.7);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(165, 56, 96, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.box-1:hover, .box-2:hover, .box-3:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    background: rgba(103, 13, 47, 0.9);
+    border-color: #A53860;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(239, 136, 173, 0.2);
+    transition: transform 0.3s;
+}
+
+.box-1:hover .content img, 
+.box-2:hover .content img, 
+.box-3:hover .content img {
+    transform: scale(1.03);
+}
+
+.content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #3A0519;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 60px;
+    border-top: 1px solid #A53860;
+}
+
+.footer h3 {
+    color: #EF88AD;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.footer ul li a:hover {
+    color: #EF88AD;
+    background: rgba(165, 56, 96, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-icono {
+        display: block;
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        background-color: #670D2F;
+        transition: left 0.4s ease;
+        padding: 20px 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    #menu:checked ~ .navbar {
+        left: 0;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    
+    .navbar ul li {
+        margin: 15px 0;
+    }
+    
+    .navbar ul li a {
+        margin-left: 0;
+        display: block;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    
+    .navbar ul li a:hover {
+        background: rgba(165, 56, 96, 0.3);
+    }
+    
+    .box-container-1, .box-container-2, .box-container-3 {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+    
+    .content img {
+        height: 300px;
+    }
+    
+    .movies {
+        padding: 100px 0 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box-container-1, .box-container-2, .box-container-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo {
+        font-size: 1.7rem;
+    }
+    
+    .movies h2 {
+        font-size: 1.7rem;
+    }
+    
+    .footer h3 {
+        font-size: 1.7rem;
+    }
+    
+    .footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Ajusta el contenedor principal */
+.content {
+    position: relative; /* Necesario para posicionamiento absoluto */
+    padding-bottom: 50px; /* Espacio para el bot��n */
+    height: 100%; /* Asegura que ocupe todo el espacio */
+}
+
+/* Contenedor del bot��n */
+.btn-container {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Estilo del bot��n */
+.ver-btn {
+    display: inline-block;
+    background: #A53860;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.ver-btn:hover {
+    background: #EF88AD;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}

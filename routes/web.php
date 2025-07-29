@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CollectionController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SubscriptionController;
@@ -14,3 +16,7 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 
 Route::get('/subscription', [SubscriptionController::class, 'index'])->name('subscription');
+
+Route::get('/collection', [CollectionController::class, 'index'])->name('collection');
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
