@@ -41,11 +41,5 @@
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
-  },
-  "resources/js/welcome.js": {
-    "file": "assets/welcome-wzysXspY.js",
-    "name": "welcome",
-    "src": "resources/js/welcome.js",
-    "isEntry": true
   }
 }

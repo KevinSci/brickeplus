@@ -11,7 +11,6 @@ export default defineConfig({
                     'resources/css/register.css', 
                     'resources/css/collection.css', 
                     'resources/css/welcome.css', 
-                    'resources/js/welcome.js',
                     'resources/js/app.js'],
             
             refresh: true,
