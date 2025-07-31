@@ -9,22 +9,23 @@
 </head>
 <body>
     <div class="container">
-        <form action="registro_control.php" method="POST">
+        <form action="{{ route('register') }}" method="POST">
+            @csrf
             <h2>Formulario de Registro</h2>
 
             <div class="inputbox">
-                <input type="text" name="nombre" id="nombre" required>
+                <input type="text" name="name" id="nombre" required>
                 <label>Nombre Completo</label>
             </div>
 
             <div class="inputbox">
-                <input type="email" name="correo" id="correo" required>
+                <input type="email" name="email" id="correo" required>
                 <label>Correo Electrónico</label>
             </div>
             
 
             <div class="inputbox">
-                <input type="password" name="clave" id="clave" required>
+                <input type="password" name="password" id="clave" required>
                 <label>Contraseña</label>
             </div>
 

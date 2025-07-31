@@ -9,15 +9,16 @@
 </head>
 <body>
     <div class="container">
-        <form action="control.php" method="POST">
-            <center><img class="mb-4" src="{{ asset('login_img/logo.png') }}" alt="" width="200" height="200"></center> 
+        <form action="{{ route('login') }}" method="POST">
+            @csrf
+            <center><img class="mb-4" src="{{ asset('login_img/logo1.png') }}" alt="" width="200" height="200"></center> 
 
             <div class="inputbox">
-                <input type="text" name="Correo Electronico" id="email" autocomplete="email" required>
+                <input type="text" name="email" id="email" autocomplete="email" required>
                 <label>Correo electronico</label>
             </div>
             <div class="inputbox">
-                <input type="password" name="pass" id="password" autocomplete="current-password" required>
+                <input type="password" name="password" id="password" autocomplete="current-password" required>
                 <label>Contraseña</label>
             </div>
             <div class="forget">

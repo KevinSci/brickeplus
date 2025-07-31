@@ -19,7 +19,7 @@
             </label>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
+                        <li><a href="{{ route('home') }}">Inicio</a></li>
                         <li><a href="#">Peliculas</a></li>
                     </ul>
                 </nav>

@@ -19,7 +19,7 @@
             </label>
                 <nav class="navbar">
                     <ul>
-                    <li><a href="sesion.php">Iniciar sesión</a></li>
+                    <li><a href="{{ route('login') }}">Iniciar sesión</a></li>
                     </ul>
                 </nav>
         </div>
@@ -46,7 +46,7 @@
                 <li>Resolución Full HD</li>
             </ul>
             <div class="price">$149.00 <span>mes</span></div>
-            <button class="choose-btn">ELIGE ESTE PLAN</button>
+            <a class="choose-btn" href="{{ route('register') }}">ELIGE ESTE PLAN</a>
         </div>
 
         <!-- Plan Estándar (Mensual) -->
@@ -58,7 +58,7 @@
                 <li>30 descargas para disfrutar offline</li>
             </ul>
             <div class="price">$199.00 <span>mes</span></div>
-            <button class="choose-btn">ELIGE ESTE PLAN</button>
+            <a class="choose-btn" href="{{ route('register') }}">ELIGE ESTE PLAN</a>
         </div>
 
         <!-- Plan Platino (Mensual) -->
@@ -71,7 +71,7 @@
                 <li>100 descargas para disfrutar offline</li>
             </ul>
             <div class="price">$249.00 <span>mes</span></div>
-            <button class="choose-btn">ELIGE ESTE PLAN</button>
+            <a class="choose-btn" href="{{ route('register') }}">ELIGE ESTE PLAN</a>
         </div>
     </div>
 
@@ -85,7 +85,7 @@
                 <li>Resolución Full HD</li>
             </ul>
             <div class="price">$99.00 <span>mes</span></div>
-            <button class="choose-btn">ELIGE ESTE PLAN</button>
+            <a class="choose-btn" href="{{ route('register') }}">ELIGE ESTE PLAN</a>
         </div>
 
         <!-- Plan Estándar (Anual) -->
@@ -97,7 +97,7 @@
                 <li>30 descargas para disfrutar offline</li>
             </ul>
             <div class="price">$149.00 <span>mes</span></div>
-            <button class="choose-btn">ELIGE ESTE PLAN</button>
+            <a class="choose-btn" href="{{ route('register') }}">ELIGE ESTE PLAN</a>
         </div>
 
         <!-- Plan Platino (Anual) -->
@@ -110,7 +110,7 @@
                 <li>100 descargas para disfrutar offline</li>
             </ul>
             <div class="price">$199.00 <span>mes</span></div>
-            <button class="choose-btn">ELIGE ESTE PLAN</button>
+            <a class="choose-btn" href="{{ route('register') }}">ELIGE ESTE PLAN</a>
         </div>
     </div>
 </div>
