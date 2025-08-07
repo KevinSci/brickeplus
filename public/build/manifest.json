@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-D4kwWfkH.css",
+    "file": "assets/app-CKQi4Pzd.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -23,10 +23,6 @@
     "file": "assets/welcome-CykeevEf.css",
     "src": "resources/css/welcome.css",
     "isEntry": true
-  },
-  "resources/img/bg-little-mermaid.jpg": {
-    "file": "assets/bg-little-mermaid-pa00aTY2.jpg",
-    "src": "resources/img/bg-little-mermaid.jpg"
   },
   "resources/img/fondo1.jpg": {
     "file": "assets/fondo1-D0ByiW9m.jpg",
