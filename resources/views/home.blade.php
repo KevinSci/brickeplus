@@ -8,33 +8,33 @@
   <title>Bricke+</title>
 </head>
 <style>
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-        :root{
-            --primary:#ff3700;
-        }
+    :root{
+        --primary:#ff3700;
+    }
 
-        body{
-            background: #000000;
-            font-family: 'Poppins', 'sans-serif';
-        }
+    body{
+        background: #000000;
+        font-family: 'Poppins', 'sans-serif';
+    }
 
-        /* ==== HEADER ==== */
-        header{
-            position: fixed; /* Fijo para que no tape el contenido al hacer scroll */
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 30px 100px;
-            z-index: 10;   
-            background: transparent;
-        }
+    /* ==== HEADER ==== */
+    header{
+        position: fixed; /* Fijo para que no tape el contenido al hacer scroll */
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 100px;
+        z-index: 10;   
+        background: transparent;
+    }
 
     .logo{
         font-size: 40px;
@@ -79,7 +79,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: url(../imagenes/bg-little-mermaid.jpg) no-repeat;
+        background: url({{ asset('img/movies/bg-little-mermaid.jpg') }}) no-repeat;
         background-size: cover;
         background-position: center;
         overflow: hidden;
@@ -390,6 +390,7 @@
             margin-top: 20px;
         }
     }
+
 </style>
 <body>
   <header>
