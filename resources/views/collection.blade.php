@@ -23,8 +23,6 @@
                         <li><a href="#">Peliculas</a></li>
                     </ul>
                 </nav>
-
-
         </div>
     </header>
 
@@ -43,7 +41,7 @@ padre le prohíbe relacionarse con ellos. En un viaje secreto, se enamora de un 
 recurre a una perversa hechicera para que, mediante un conjuro, su amor triunfe.
                     </p>
                     <div class="btn-container"> <!-- Contenedor nuevo para el botón -->
-            <a href="detalle-pelicula.html" class="ver-btn">Ver Película</a>
+            <a href="{{ route('collection.movie', ['movie' => 'TheLittleMermaid']) }}" class="ver-btn">Ver Película</a>
         </div>
                 </div>
             </div>
@@ -59,7 +57,7 @@ recurre a una perversa hechicera para que, mediante un conjuro, su amor triunfe.
                        las regiones de Pandora cuando una antigua amenaza reaparece.
                     </p>
                     <div class="btn-container"> <!-- Contenedor nuevo para el botón -->
-            <a href="detalle-pelicula.html" class="ver-btn">Ver Película</a>
+            <a href="{{ route('collection.movie', ['movie' => 'AvatarTheWayOfWater']) }}" class="ver-btn">Ver Película</a>
         </div>
                 </div>
             </div>
@@ -74,7 +72,7 @@ Durante la década de 1990, los Maximals, Predacons y Terrorcons se unen a la ba
 existente en la Tierra entre Autobots y Decepticons.                
                    </p>
                    <div class="btn-container"> <!-- Contenedor nuevo para el botón -->
-            <a href="detalle-pelicula.html" class="ver-btn">Ver Película</a>
+            <a href="{{ route('collection.movie', ['movie' => 'TransformersElDespertarDeLasBestias']) }}" class="ver-btn">Ver Película</a>
         </div>
                 </div>
             </div>
@@ -90,7 +88,7 @@ subterráneo mágico en el que deben enfrentarse al malvado Bowser para rescatar
 princesa Peach, quien ha sido forzada a aceptar casarse con él.                
                   </p>
                   <div class="btn-container"> <!-- Contenedor nuevo para el botón -->
-            <a href="detalle-pelicula.html" class="ver-btn">Ver Película</a>
+            <a href="{{ route('collection.movie', ['movie' => 'SuperMarioBros']) }}" class="ver-btn">Ver Película</a>
         </div>
                 </div>
             </div>
