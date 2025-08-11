@@ -13,12 +13,22 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password')->nullable();
+            $table->unsignedBigInteger('plan_id')->nullable();
+            $table->string('payment_id')->nullable();
+            $table->string('stripe_customer_id')->nullable();
+            $table->string('stripe_subscription_id')->nullable();
+            $table->enum('subscription_status', ['active', 'canceled', 'unpaid', 'past_due', 'incomplete'])->default('active');
+            $table->date('subscription_start')->nullable();
+            $table->date('subscription_end')->nullable();
             $table->rememberToken();
             $table->timestamps();
+
+            $table->foreign('plan_id')->references('id')->on('plans')->onDelete('set null');
+            $table->index(['email', 'subscription_status']);
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {

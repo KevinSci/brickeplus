@@ -6,6 +6,8 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SubscriptionController;
+use App\Http\Controllers\StripeController;
+use App\Http\Controllers\StripeWebhookController;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -40,4 +42,22 @@ Route::middleware(['auth'])->group(function () {
     
 });
 
-//Route::get('/movie', [MovieController::class, 'index'])->name('movie');
+
+
+// Stripe Routes
+Route::group(['prefix' => 'stripe'], function () {
+    // Show subscription plans
+    Route::get('/plans', [StripeController::class, 'plans'])->name('stripe.plans');
+    
+    // Create checkout session
+    Route::post('/create-checkout-session', [StripeController::class, 'createCheckoutSession'])->name('stripe.checkout');
+    
+    // Success and cancel pages
+    Route::get('/success', [StripeController::class, 'success'])->name('stripe.success');
+    Route::get('/cancel', [StripeController::class, 'cancel'])->name('stripe.cancel');
+});
+
+// Webhook route (outside of web middleware group)
+Route::post('/stripe/webhook', [StripeWebhookController::class, 'handleWebhook'])
+    ->middleware('api')
+    ->name('stripe.webhook');
