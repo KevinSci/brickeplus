@@ -48,4 +48,19 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+        /**
+         * Actualiza o crea un usuario con datos de suscripción Stripe.
+         *
+         * @param string $email
+         * @param array $attributes
+         * @return self
+         */
+        public static function updateOrCreateWithSubscription($email, array $attributes)
+        {
+            return self::updateOrCreate(
+                ['email' => $email],
+                $attributes
+            );
+        }
 }

@@ -69,11 +69,13 @@ class StripeController extends Controller
             'stripe_subscription_id' => $session->subscription,
         ]);
 
+
+
         // Crear transacción
         Transaction::createForSubscription(
             $user->id,
             $result['plan']->id,
-            $session->payment_intent,
+            //$session->payment_intent,
             $session->subscription,
             $result['plan']->price
         );

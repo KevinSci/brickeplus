@@ -68,14 +68,14 @@ class Transaction extends Model
     public static function createForSubscription(
         int $userId,
         int $planId,
-        string $paymentIntentId,
+        //string $paymentIntentId,
         string $subscriptionId,
         float $amount
     ): self {
         return static::create([
             'user_id' => $userId,
             'plan_id' => $planId,
-            'stripe_payment_intent_id' => $paymentIntentId,
+            //'stripe_payment_intent_id' => $paymentIntentId,
             'stripe_subscription_id' => $subscriptionId,
             'amount' => $amount,
             'status' => 'succeeded',
