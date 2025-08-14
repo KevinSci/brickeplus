@@ -97,7 +97,7 @@ princesa Peach, quien ha sido forzada a aceptar casarse con él.
 
     </section>
 
-        <section class="movies container">
+       <section class="movies container">
 
         <h2>Peliculas De Accion</h2>
         <hr>
@@ -105,33 +105,42 @@ princesa Peach, quien ha sido forzada a aceptar casarse con él.
             <div class="box-2">
 
                 <div class="content">
-                    <img src="{{ asset('img/9.jpg')}}" alt="">
-                    <h3>Venom: El último baile</h3>
+                    <img src="{{ asset('img/conjuro.jpg')}}" alt="">
+                    <h3>El conjuro 2</h3>
                     <p>
-                        Proximamente...
+                        Ed y Lorraine Warren, renombrados demonólogos e investigadores de lo paranormal, se enfrentan de nuevo a las fuerzas infernales. En esta ocasión, viajan hasta el norte de Londres para tratar de ayudar a una madre y sus cuatro hijos, quienes habitan en una casa plagada de espíritus malignos.
                     </p>
+                    <div class="btn-container"> <!-- Contenedor nuevo para el botón -->
+                         <a href="{{ route('collection.movie', ['movie' => 'ElConjuro2']) }}" class="ver-btn">Ver Película</a>
+                    </div>
                 </div>
             </div>
 
             <div class="box-2">
 
                 <div class="content">
-                    <img src="{{ asset('img/10.jpg')}}" alt="">
-                    <h3>Venom</h3>
+                    <img src="{{ asset('img/karate.jpg')}}" alt="">
+                    <h3>Karate Kit Legends</h3>
                     <p>
-                        Proximamente...
+                        Daniel llega a Beijing y descubre que Han tiene un nuevo protegido, Li Fong. Los dos mentores deben colaborar y ajustar enfoques educativos para preparar a Li Fong.
                     </p>
+                    <div class="btn-container"> <!-- Contenedor nuevo para el botón -->
+                         <a href="{{ route('collection.movie', ['movie' => 'KarateKidLegends2025']) }}" class="ver-btn">Ver Película</a>
+                    </div>
                 </div>
             </div>
 
             <div class="box-2">
 
                 <div class="content">
-                    <img src="{{ asset('img/11.jpg')}}" alt="">
-                    <h3>Spider-Man: sin camino a casa</h3>
+                    <img src="{{ asset('img/gigantes.jpg')}}" alt="">
+                    <h3>Gigantes de acero</h3>
                     <p>
-                        Proximamente...
+                        En un futuro cercano, los robots de boxeo han reemplazado a los humanos en el ring. Charlie Kenton, un exboxeador, se convierte en entrenador de un robot llamado Atom, con el que intenta llegar a la cima del deporte.
                     </p>
+                    <div class="btn-container"> <!-- Contenedor nuevo para el botón -->
+                         <a href="{{ route('collection.movie', ['movie' => 'Gigantesdeacero']) }}" class="ver-btn">Ver Película</a>
+                    </div>
                 </div>
             </div>
 
@@ -143,6 +152,9 @@ princesa Peach, quien ha sido forzada a aceptar casarse con él.
                     <p>
                         Proximamente...
                     </p>
+                    <div class="btn-container"> <!-- Contenedor nuevo para el botón -->
+                         <a href="{{ route('collection.movie', ['movie' => 'SuperMarioBros']) }}" class="ver-btn">Ver Película</a>
+                    </div>
                 </div>
             </div>
 
